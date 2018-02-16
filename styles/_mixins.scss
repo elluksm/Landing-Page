@@ -1,0 +1,17 @@
+@mixin placeholder-color ($color) {
+  &::placeholder {
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin translate-center ($x,$y) {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate($x, $y);
+  -webkit-transform: translate($x, $y);
+  transform: translate($x, $y);
+}

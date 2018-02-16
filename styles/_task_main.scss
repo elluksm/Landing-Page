@@ -1,0 +1,354 @@
+
+// Table of contents
+
+// === Basic styles
+// === Header
+// === About Us
+// === Send query
+// === Footer
+
+
+//============ Basic styles start =========
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: $font;
+  font-size: 18px;
+}
+
+.dyn-content {
+  h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: $col-dark;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    color: $col-dark;
+  }
+
+  p {
+    color: $col-grey;
+  }
+}
+
+.blue-button {
+  height: 60px;
+  box-sizing: border-box;
+  border: none;
+  color: $col-white;
+  background-color: $col-dark-blue;
+  font-family: $font;
+  font-size: 18px;
+
+  &:hover {
+    background-color: $col-light-blue;
+  }
+}
+
+.sprite {
+  display: inline-block;
+  background: $sprite no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+//============ Basic styles end ===========
+
+
+
+//============ Header start =========
+
+.dyn-header {
+  height: 887px;
+  background-image: $header-img;
+  background-size: cover;
+  color: $col-white;
+
+  .dyn-logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .container-header {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 80px;
+
+    .container-header-heading {
+      max-width: 660px;
+      padding-top: 280px;
+    }
+
+    .container-header-text {
+      max-width: 780px;
+    }
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 110%;
+  }
+
+  p {
+    line-height: 30px;
+  }
+
+  .header-links {
+    margin-top: 40px;
+    box-sizing: border-box;
+  }
+
+  .blue-button {
+    margin-top: 50px;
+    padding: 17px 115px 17px 115px;
+    text-decoration: none;
+  }
+
+  .dashed-link {
+    margin-left: 25px;
+    padding-bottom: 3px;
+    color: $col-white;
+    text-decoration-style: dashed;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+//============ Header end ===========
+
+
+
+//============ section About Us start ==========
+
+.about-us {
+  height: 700px;
+
+  .container-about-us {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 93px;
+  }
+
+  .column-about-us {
+    width: 33.33%;
+    float: left;
+
+    .column-padding {
+      padding-right: 13%;
+      padding-left: 13%;
+    }
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0;
+    border: 1px solid #85919d;
+    border-radius: 50%;
+  }
+
+  p {
+    margin-top: 6px;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 30px;
+  }
+
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 45px;
+  }
+}
+
+.about-logo-philosophy {
+  background-position: -2px -0px;
+  @include translate-center(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  position: relative;
+  display: block;
+}
+
+.about-logo-us {
+  background-position: -2px -46px;
+  @include translate-center(-50%, -50%);
+  width: 40px;
+  height: 42px;
+  position: relative;
+  display: block;
+}
+
+.about-logo-work {
+  background-position: -2px -90px;
+  @include translate-center(-50%, -50%);
+  width: 35px;
+  height: 33px;
+  position: relative;
+  display: block;
+}
+//============ section About Us end ==========
+
+
+
+//============ section Send query start ==========
+
+.query {
+  height: 652px;
+  color: $col-white;
+
+  .container-query {
+    max-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 80px;
+  }
+
+  h2 {
+    margin: 0;
+    color: $col-white;
+  }
+
+  blockquote {
+    text-align: center;
+    margin: 25px 0 42px 0;
+    line-height: 30px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 9px 9px 9px 15px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    font-family: $font;
+    font-style: italic;
+  }
+
+  select {
+    width: 100%;
+    padding: 9px 9px 9px 15px;
+    border: none;
+    font-size: 16px;
+    font-family: $font;
+    font-style: italic;
+
+    option {
+      color: $col-dark;
+    }
+  }
+
+  div.phone-input {
+    width: 48%;
+    float: left;
+  }
+
+  div.email-input {
+    width: 49%;
+    float: right;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  //form fields without errors
+  .normal-form-field {
+    color: $col-dark;
+    @include placeholder-color ($col-grey);
+  }
+
+  .normal-form-field-name {
+    color: $col-dark;
+    @include placeholder-color ($col-dark);
+  }
+
+  .normal-form-field-select {
+    color: $col-grey;
+  }
+
+  //form fields with errors
+  .error-form-field {
+    background-color: $col-light-red;
+    color: $col-red;
+    @include placeholder-color ($col-red);
+  }
+}
+
+.query-background {
+  background: $col-grey;
+}
+
+.query-background-submission {
+  background: $col-grey $query-img no-repeat center;
+}
+
+//============ section Send query end ==========
+
+
+
+//============ Footer start ==========
+
+.footer {
+  height: 165px;
+  margin-top: 40px;
+  color: $col-grey;
+  text-align: center;
+
+  small {
+    padding-bottom: 30px;
+    display: block;
+    font-size: 18px;
+  }
+
+  //social logo - sprites
+  .social-linkedin {
+    background-position: -2px -298px;
+    width: 33px;
+    height: 33px;
+
+    &:hover {
+      background-position: -2px -159px;
+    }
+  }
+
+  .social-facebook {
+    background-position: -2px -194px;
+    width: 33px;
+    height: 33px;
+
+    &:hover {
+      background-position: -2px -125px;
+    }
+  }
+
+  .social-google {
+    background-position: -2px -263px;
+    width: 33px;
+    height: 33px;
+
+    &:hover {
+      background-position: -2px -229px;
+    }
+  }
+}
+//============ Footer end ==========

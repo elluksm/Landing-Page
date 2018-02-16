@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+    <main>
+        <section class="dyn-header">
+            <div class="container-header">
+                <img class="dyn-logo" src="../public/img/dyninno-logo" height="48" width="270">
+                <div>
+                    <div class="container-header-heading">
+                        <h1>This is a Great Mockup for the new Developers!</h1>
+                    </div>
+                    <div class="container-header-text">
+                        <p>Mr. Fogg readily made a bargain with the owner of this land-craft. The wind was favourable, being fresh, and blowing from the west.
+                            The snow had hardened, and Mudge was very confident of being able to transport Mr. Fogg in a few hours to Omaha.</p>
+                        <div class="header-links">
+                            <a href="#querySection" id = "linkQuery" class="blue-button">Apply for this</a>
+                            <a data-popup-open="popup-learn-more" href="#" class="dashed-link">Learn more about our services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us dyn-content">
+            <div class="container-about-us">
+                <h2>About Us</h2>
+                <div class="row">
+
+                    <div class="column-about-us">
+                        <div class="column-padding">
+                            <div class="circle">
+                                <div class="sprite about-logo-us"></div>
+                            </div>
+                            <h3>Why choose Us?</h3>
+                            <p>The distance between Fort Kearney and Omaha, as the birds fly, is at most two hundred miles.
+                                If the wind held good, the distance might be traversed in five hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-about-us">
+                        <div class="column-padding">
+                            <div class="circle">
+                                <div class="sprite about-logo-work"></div>
+                            </div>
+                            <h3>What we do?</h3>
+                            <p>Much of this was over the heads of the boys, but they all three strove to comprehend dimly this tale of the past long gone.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-about-us">
+                        <div class="column-padding">
+                            <div class="circle">
+                                <div class="sprite about-logo-philosophy"></div>
+                            </div>
+                            <h3>Philosophy</h3>
+                            <p>Yes, a mighty change had come over the fish. All alive to his jeopardy,
+                                he was going "head out"; that part obliquely projecting from the mad yeast which he brewed.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="query query-background dyn-content" id="querySection">
+            <div class="container-query">
+                <h2>Send a Query</h2>
+                <blockquote>"What was them stone houses for?" Hare-Lip queried.</blockquote>
+
+                <form action="" method="post" id="queryForm" name="queryForm">
+                    <input type="text" name="title" placeholder="* Request title" class="normal-form-field">
+                    <input type="text" name="name_surname" placeholder="John Doe" id="name_surname" class="normal-form-field-name">
+                    <div class="phone-input">
+                        <input type="text" name="phone" placeholder="* Phone" class="normal-form-field">
+                    </div>
+                    <div class="email-input ui-widget">
+                        <input type="email" name="email" placeholder="* email" id="emailAutomplete" class="normal-form-field">
+                    </div>
+
+                    <select name="location" id="selectLocation" class="normal-form-field-select">
+                        <option value="0"> * Choose your location </option>
+                    </select>
+
+                    <button type="submit" value="send-query" class="blue-button">Send Query</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <small>&copy 2013-2016 Great Mockup. All rights reserved.</small>
+        <div class="sprite social-linkedin"></div>
+        <div class="sprite social-facebook"></div>
+        <div class="sprite social-google"></div>
+    </footer>
+
+
+    <div class="popup" data-popup="popup-learn-more">
+        <div class="popup-inner">
+            <img src="../public/img/popup-banner.png" height="231" width="800">
+            <h2>We are number one!</h2>
+            <p>Go and gaze upon the iron emblematical harpoons round yonder lofty mansion, and your question will be answered. Yes; all these brave houses
+                and flowery gardens came from the Atlantic, Pacific, and Indian oceans. One and all, they were harpooned and dragged up hither from the bottom of the sea.
+                Can Herr Alexander perform a feat like that?</p>
+
+            <div class="dyn-links">
+                <div class="column-links">
+                    <div class="sprite popup-logo-reviews"></div>
+                    <a href="#">See reviews</a>
+                </div>
+                <div class="column-links">
+                    <div class="sprite popup-logo-partners"></div>
+                    <a href="#">Partnership</a>
+                </div>
+                <div class="column-links">
+                    <div class="sprite popup-logo-adverts"></div>
+                    <a href="#">Adverts</a>
+                </div>
+            </div>
+
+            <a class="close sprite popup-close" data-popup-close="popup-learn-more" href="#"></a>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="popup-query-success">
+        <div class="popup-inner ">
+            <div class="popup-query-success">
+                <h2>Thank you!</h2>
+                <p>Further conversation of a personal nature was prevented by the entrance of Sola, who was much agitated and wholly unlike her usual calm and possessed self.</p>
+                <p><a class="blue-button" data-popup-close="popup-query-success" href="#">Understood</a></p>
+                <a class="close sprite popup-close" data-popup-close="popup-query-success" href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
