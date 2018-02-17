@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landing Page</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <main>
         <section class="dyn-header">
             <div class="container-header">
-                <img class="dyn-logo" src="../public/img/dyninno-logo" height="48" width="270">
                 <div>
                     <div class="container-header-heading">
                         <h1>This is a Great Mockup for the new Developers!</h1>
@@ -39,7 +46,7 @@
                     <div class="column-about-us">
                         <div class="column-padding">
                             <div class="circle">
-                                <div class="sprite about-logo-us"></div>
+                                <i class="fas fa-users fa-3x about-logo"></i>
                             </div>
                             <h3>Why choose Us?</h3>
                             <p>The distance between Fort Kearney and Omaha, as the birds fly, is at most two hundred miles.
@@ -50,7 +57,7 @@
                     <div class="column-about-us">
                         <div class="column-padding">
                             <div class="circle">
-                                <div class="sprite about-logo-work"></div>
+                                <i class="fas fa-briefcase fa-3x about-logo"></i>
                             </div>
                             <h3>What we do?</h3>
                             <p>Much of this was over the heads of the boys, but they all three strove to comprehend dimly this tale of the past long gone.</p>
@@ -60,7 +67,7 @@
                     <div class="column-about-us">
                         <div class="column-padding">
                             <div class="circle">
-                                <div class="sprite about-logo-philosophy"></div>
+                                <i class="fas fa-graduation-cap fa-3x about-logo"></i>
                             </div>
                             <h3>Philosophy</h3>
                             <p>Yes, a mighty change had come over the fish. All alive to his jeopardy,
@@ -89,6 +96,7 @@
 
                     <select name="location" id="selectLocation" class="normal-form-field-select">
                         <option value="0"> * Choose your location </option>
+                        <option value="Latvia"> Latvia </option>
                     </select>
 
                     <button type="submit" value="send-query" class="blue-button">Send Query</button>
@@ -100,16 +108,16 @@
     </main>
 
     <footer class="footer">
-        <small>&copy 2013-2016 Great Mockup. All rights reserved.</small>
-        <div class="sprite social-linkedin"></div>
-        <div class="sprite social-facebook"></div>
-        <div class="sprite social-google"></div>
+        <small>&copy 2018 Great Mockup. All rights reserved.</small>
+        <i class="fab fa-linkedin fa-2x social"></i>
+        <i class="fab fa-facebook fa-2x social"></i>
+        <i class="fab fa-google-plus-square fa-2x social"></i>
     </footer>
 
 
     <div class="popup" data-popup="popup-learn-more">
         <div class="popup-inner">
-            <img src="../public/img/popup-banner.png" height="231" width="800">
+            <img src="https://images.unsplash.com/photo-1495572050486-a9b739c11fb9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ed8945979820790676347b7c6b75174&auto=format&fit=crop&w=634&q=80" height="231" width="800">
             <h2>We are number one!</h2>
             <p>Go and gaze upon the iron emblematical harpoons round yonder lofty mansion, and your question will be answered. Yes; all these brave houses
                 and flowery gardens came from the Atlantic, Pacific, and Indian oceans. One and all, they were harpooned and dragged up hither from the bottom of the sea.
@@ -117,20 +125,19 @@
 
             <div class="dyn-links">
                 <div class="column-links">
-                    <div class="sprite popup-logo-reviews"></div>
+                    <i class="fas fa-star fa-2x"></i>
                     <a href="#">See reviews</a>
                 </div>
                 <div class="column-links">
-                    <div class="sprite popup-logo-partners"></div>
+                    <i class="fas fa-child fa-2x"></i>
                     <a href="#">Partnership</a>
                 </div>
                 <div class="column-links">
-                    <div class="sprite popup-logo-adverts"></div>
+                    <i class="fas fa-check-circle fa-2x"></i>
                     <a href="#">Adverts</a>
                 </div>
             </div>
-
-            <a class="close sprite popup-close" data-popup-close="popup-learn-more" href="#"></a>
+            <a class="close" data-popup-close="popup-learn-more" href="#"><i class="fas fa-times popup-close fa-2x"></i></a>
         </div>
     </div>
 
@@ -140,15 +147,11 @@
                 <h2>Thank you!</h2>
                 <p>Further conversation of a personal nature was prevented by the entrance of Sola, who was much agitated and wholly unlike her usual calm and possessed self.</p>
                 <p><a class="blue-button" data-popup-close="popup-query-success" href="#">Understood</a></p>
-                <a class="close sprite popup-close" data-popup-close="popup-query-success" href="#"></a>
+                <a class="close" data-popup-close="popup-query-success" href="#"><i class="fas fa-times fa-2x popup-close"></i></a>
             </div>
         </div>
     </div>
 
-    <script
-            src="http://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+
 </body>
 </html>

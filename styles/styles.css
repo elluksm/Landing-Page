@@ -27,22 +27,11 @@ body {
   .blue-button:hover {
     background-color: #3267ca; }
 
-.sprite {
-  display: inline-block;
-  background: url("../public/img/dyn-sprites.png") no-repeat;
-  overflow: hidden;
-  text-indent: -9999px;
-  text-align: left; }
-
 .dyn-header {
   height: 887px;
   background-image: url(https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1f2960274a222e313ad094b2604a83d2&auto=format&fit=crop&w=1350&q=80);
   background-size: cover;
   color: #ffffff; }
-  .dyn-header .dyn-logo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block; }
   .dyn-header .container-header {
     max-width: 1100px;
     margin-right: auto;
@@ -108,41 +97,14 @@ body {
   .about-us h2 {
     margin-bottom: 45px; }
 
-.about-logo-philosophy {
-  background-position: -2px -0px;
+.about-logo {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 44px;
-  height: 44px;
   position: relative;
-  display: block; }
-
-.about-logo-us {
-  background-position: -2px -46px;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 42px;
-  position: relative;
-  display: block; }
-
-.about-logo-work {
-  background-position: -2px -90px;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 35px;
-  height: 33px;
-  position: relative;
-  display: block; }
+  color: #85919d; }
 
 .query {
   height: 652px;
@@ -223,24 +185,8 @@ body {
     padding-bottom: 30px;
     display: block;
     font-size: 18px; }
-  .footer .social-linkedin {
-    background-position: -2px -298px;
-    width: 33px;
-    height: 33px; }
-    .footer .social-linkedin:hover {
-      background-position: -2px -159px; }
-  .footer .social-facebook {
-    background-position: -2px -194px;
-    width: 33px;
-    height: 33px; }
-    .footer .social-facebook:hover {
-      background-position: -2px -125px; }
-  .footer .social-google {
-    background-position: -2px -263px;
-    width: 33px;
-    height: 33px; }
-    .footer .social-google:hover {
-      background-position: -2px -229px; }
+  .footer .social:hover {
+    color: #3267ca; }
 
 .popup {
   position: fixed;
@@ -297,23 +243,9 @@ body {
         display: inline-block; }
 
 .popup-close {
-  background-position: -2px -365px; }
+  color: #85919d;
+  font-weight: 300; }
   .popup-close:hover {
-    background-position: -2px -333px; }
-
-.popup-logo-reviews {
-  background-position: -2px -397px;
-  width: 28px;
-  height: 26px; }
-
-.popup-logo-adverts {
-  background-position: -2px -425px;
-  width: 26px;
-  height: 26px; }
-
-.popup-logo-partners {
-  background-position: -2px -453px;
-  width: 20px;
-  height: 27px; }
+    color: #494e68; }
 
 /*# sourceMappingURL=styles.css.map */

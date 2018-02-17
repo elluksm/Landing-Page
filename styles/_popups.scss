@@ -77,29 +77,12 @@
   }
 }
 
-//Sprites
 .popup-close {
-  background-position: -2px -365px;
+  color: $col-grey;
+  font-weight: 300;
 
   &:hover {
-    background-position: -2px -333px;
+    color: $col-dark;
   }
 }
 
-.popup-logo-reviews {
-  background-position: -2px -397px;
-  width: 28px;
-  height: 26px;
-}
-
-.popup-logo-adverts {
-  background-position: -2px -425px;
-  width: 26px;
-  height: 26px;
-}
-
-.popup-logo-partners {
-  background-position: -2px -453px;
-  width: 20px;
-  height: 27px;
-}

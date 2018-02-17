@@ -50,13 +50,6 @@ body {
   }
 }
 
-.sprite {
-  display: inline-block;
-  background: $sprite no-repeat;
-  overflow: hidden;
-  text-indent: -9999px;
-  text-align: left;
-}
 //============ Basic styles end ===========
 
 
@@ -68,12 +61,6 @@ body {
   background-image: $header-img;
   background-size: cover;
   color: $col-white;
-
-  .dyn-logo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
 
   .container-header {
     max-width: 1100px;
@@ -157,7 +144,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding:0;
-    border: 1px solid #85919d;
+    border: 1px solid $col-grey;
     border-radius: 50%;
   }
 
@@ -178,32 +165,12 @@ body {
   }
 }
 
-.about-logo-philosophy {
-  background-position: -2px -0px;
+.about-logo {
   @include translate-center(-50%, -50%);
-  width: 44px;
-  height: 44px;
   position: relative;
-  display: block;
+  color: $col-grey;
 }
 
-.about-logo-us {
-  background-position: -2px -46px;
-  @include translate-center(-50%, -50%);
-  width: 40px;
-  height: 42px;
-  position: relative;
-  display: block;
-}
-
-.about-logo-work {
-  background-position: -2px -90px;
-  @include translate-center(-50%, -50%);
-  width: 35px;
-  height: 33px;
-  position: relative;
-  display: block;
-}
 //============ section About Us end ==========
 
 
@@ -320,35 +287,10 @@ body {
     font-size: 18px;
   }
 
-  //social logo - sprites
-  .social-linkedin {
-    background-position: -2px -298px;
-    width: 33px;
-    height: 33px;
-
-    &:hover {
-      background-position: -2px -159px;
-    }
+  //social logo
+  .social:hover {
+    color: $col-light-blue;
   }
 
-  .social-facebook {
-    background-position: -2px -194px;
-    width: 33px;
-    height: 33px;
-
-    &:hover {
-      background-position: -2px -125px;
-    }
-  }
-
-  .social-google {
-    background-position: -2px -263px;
-    width: 33px;
-    height: 33px;
-
-    &:hover {
-      background-position: -2px -229px;
-    }
-  }
 }
 //============ Footer end ==========
